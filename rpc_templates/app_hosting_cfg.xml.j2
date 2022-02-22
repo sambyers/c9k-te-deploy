@@ -1,0 +1,22 @@
+<config>
+  <app-hosting-cfg-data xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-app-hosting-cfg">
+    <apps>
+      <app>
+        <application-name>1keyes</application-name>
+        <application-network-resource>
+          <nameserver-0>{{ns1}}</nameserver-0>
+          <nameserver-1>{{ns2}}</nameserver-1>
+          <management-interface-name>0</management-interface-name>
+        </application-network-resource>
+        <start>true</start>
+        <docker-resource>true</docker-resource>
+        <run-optss>
+          <run-opts>
+            <line-index>1</line-index>
+            <line-run-opts>-e TEAGENT_ACCOUNT_TOKEN={{account_token}}</line-run-opts>
+          </run-opts>
+        </run-optss>
+      </app>
+    </apps>
+  </app-hosting-cfg-data>
+</config>

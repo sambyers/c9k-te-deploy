@@ -1,0 +1,3 @@
+<filter>
+    <app-hosting-oper-data xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-app-hosting-oper"/>
+</filter>

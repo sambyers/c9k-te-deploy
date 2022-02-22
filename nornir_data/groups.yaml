@@ -1,0 +1,14 @@
+---
+global:
+  data:
+    ns1: 208.67.222.222
+    ns2: 208.67.220.200
+    account_token: 123456789
+iosxe:
+  platform: ios
+  connection_options:
+    scrapli_netconf:
+      port: 830
+      extras:
+        ssh_config_file: True
+        auth_strict_key: False

@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "c9k-te-deploy"
+version = "0.1.0"
+description = ""
+authors = ["sambyers"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+nornir = "^3.2.0"
+scrapli-netconf = "^2022.1.30"
+nornir-scrapli = "^2022.1.30"
+nornir-jinja2 = "^0.2.0"
+nornir-napalm = "^0.1.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0.1"
+pyang = "^2.5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
