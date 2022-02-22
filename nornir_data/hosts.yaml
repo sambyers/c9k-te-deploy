@@ -1,5 +1,5 @@
 ---
-ios-xe-mgmt-latest.cisco.com:
-  hostname: ios-xe-mgmt-latest.cisco.com
+Sandbox-C9300:
+  hostname: 10.10.20.100
   groups:
     - iosxe

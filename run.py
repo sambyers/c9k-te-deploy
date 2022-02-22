@@ -24,10 +24,10 @@ for host in nr.inventory.hosts.keys():
     cfg_result = nr.run(task=netconf_edit_config, config=ah_cfg)
     print_result(cfg_result)
     # Run the install exec command
-    install_cmd = 'app-hosting install appid 1keyes package https://downloads.thousandeyes.com/enterprise-agent/thousandeyes-enterprise-agent-3.0.cat9k.tar'
-    install_result = nr.run(task=napalm_cli, commands=[install_cmd])
-    print_result(install_result)
-    # Get RPC filter
+    #install_cmd = 'app-hosting install appid 1keyes package https://downloads.thousandeyes.com/enterprise-agent/thousandeyes-enterprise-agent-3.0.cat9k.tar'
+    #install_result = nr.run(task=napalm_cli, commands=[install_cmd])
+    #print_result(install_result)
+    # Get App Hosting Netconf filter
     with open('rpc_templates/app_hosting_oper.xml') as fh:
         ncfilter = fh.read()
     # Get App Hosting configuration RPC
